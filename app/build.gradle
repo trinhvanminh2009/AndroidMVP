@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.minh.trinh.androidmvp"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$app_compat"
+    implementation "androidx.core:core-ktx:$app_compat"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "org.greenrobot:eventbus:$eventbus"
+
+    api "com.google.dagger:dagger-android:$dagger2"
+    api "com.google.dagger:dagger:$dagger2"
+    api "com.google.dagger:dagger-android-support:$dagger2"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger2"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger2"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+
+
+
+
+
+
+    implementation "io.reactivex.rxjava2:rxandroid:$rxjava2"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2"
+}
+kapt {
+    generateStubs = true
+}
