@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">AndroidMVP</string>
     <string name="no_connection">No connection</string>
-
+    <string name="internet_failed">Check connection</string>
+    <string name="connection_timeout">Connection timeout</string>
+    <string name="connection_failed">Connection failed</string>
 </resources>

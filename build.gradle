@@ -9,6 +9,7 @@ buildscript {
     ext.gson = '2.8.6'
     ext.retrofit = '2.6.1'
     ext.eventbus = '3.1.1'
+    ext.x_support = '1.0.0'
 
     repositories {
         google()
