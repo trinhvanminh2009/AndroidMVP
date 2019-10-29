@@ -32,12 +32,13 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$x_support"
     implementation "androidx.appcompat:appcompat:$app_compat"
     implementation "androidx.core:core-ktx:$app_compat"
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.squareup.okhttp3:okhttp:$okhttp3"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
     implementation "com.google.code.gson:gson:$gson"
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "org.greenrobot:eventbus:$eventbus"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 
     api "com.google.dagger:dagger-android:$dagger2"
     api "com.google.dagger:dagger:$dagger2"
@@ -48,11 +49,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-
-
-
-
-
 
 
     implementation "io.reactivex.rxjava2:rxandroid:$rxjava2"

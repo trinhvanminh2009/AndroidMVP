@@ -47,5 +47,6 @@ class ApiConstants {
 
         const val  TIME_OUT : Long = 30
         const val MINIMUM_INTERVAL_CLICK_TIME = 300L
+        const val WELCOME_SCREEN_TIME = 1500L
     }
 }
